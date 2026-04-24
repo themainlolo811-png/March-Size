@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PnS March Size Tool</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="nav-logo">PnS <span>March Size</span></div>
+    <div class="nav-tabs">
+      <button class="nav-tab" data-page="page-overview" onclick="showPage('page-overview')">Overview</button>
+      <button class="nav-tab" data-page="page-calc" onclick="showPage('page-calc')">Calculator</button>
+    </div>
+  </div>
+</nav>
+
+<!-- OVERVIEW PAGE -->
+<div class="page" id="page-overview">
+  <h1>Everything that affects<br><span class="highlight">your march size</span></h1>
+  <p class="page-subtitle">A complete reference for all march size sources in Puzzles & Survival — with max values and how hard each one is to get.</p>
+
+  <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:28px;">
+    <span class="badge badge-easy">🟢 Easy — freely farmable (spending can speed this up)</span>
+    <span class="badge badge-grind">🟡 Grind — consistent F2P effort (spending can speed this up)</span>
+    <span class="badge badge-extreme_grind">🔴 Extreme Grind — technically F2P, realistically very slow (spending can speed this up)</span>
+    <span class="badge badge-pay_only">💜 Pay Only — no F2P path</span>
+  </div>
+
+  <div id="overview-content"></div>
+</div>
+
+<!-- CALCULATOR PAGE -->
+<div class="page" id="page-calc">
+  <h1>March Size <span class="highlight">Calculator</span></h1>
+  <p class="page-subtitle">Enter your current levels to see your total march size and what upgrades will gain you the most troops.</p>
+  <div id="calc-content"></div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
